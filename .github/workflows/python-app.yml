@@ -20,7 +20,7 @@ jobs:
     - name: python hello.py Run
       run: python hello.py
         
-    - name: python hello.py Run 2
-      run:  python hello.py
+    - name: python hello2.py Run 2
+      run:  python hello2.py
         
   
