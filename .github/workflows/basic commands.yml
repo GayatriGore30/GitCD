@@ -16,7 +16,7 @@ jobs:
          run: ls-la
 
        - name: Print todays date
-          run:date
+         run: date
 
 
 
