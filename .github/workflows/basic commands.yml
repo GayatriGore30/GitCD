@@ -1,21 +1,22 @@
 on:
-  push:
-   branches:
-    -main
-  schedule:
-    -cron:"O O * * *" #Every day at midnight UTC
-  workflow_dispatch: #Manual trigger
+ schedule:
+    - cron: "*/2****" #Every day at midnight UTC
 
 jobs:
    demo-commands:
     runs-on: ubuntu-latest
 
-  steps:
-   - name: Show current working directory
-    run:pwd
+    steps: 
+       - name: Show current working directory
+         run: pwd  
+        
+       - name: List files in the directory 
+         run: ls-la
 
-  - name: List files in the directory 
-   run: ls -la
+       - name: Print todays date
+          run:date
 
-  - name: Print todays date
-    run: date
+
+
+
+          
